@@ -1,0 +1,498 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat";
+  scroll-behavior: smooth;
+}
+section {
+  padding: 50px;
+}
+/* Home-section */
+
+.home {
+  position: relative;
+  min-height: 100vh;
+  background: url(https://www.rambina.com/wp-content/uploads/2016/05/website-design-background-1.jpg);
+  background-size: cover;
+  background-position: right;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.home-container ul {
+  margin-right: 200px;
+  padding-top: 10px;
+}
+.home h2 {
+  font-size: 3em;
+  color: white;
+  font-weight: 500;
+  line-height: 1.5em;
+}
+.home h2 span {
+  font-size: 1.5em;
+  font-weight: 700;
+}
+.home h3 {
+  font-size: 1.5em;
+  color: white;
+  font-weight: 500;
+}
+.btn {
+  position: relative;
+  background: #2196f3;
+  display: inline-block;
+  color: white;
+  margin-top: 20px;
+  padding: 10px 30px;
+  font-size: 18px;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+.btn:hover {
+  background: rgb(93, 34, 230);
+  color: #fff;
+}
+
+/* Header-section */
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px 10px;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.5s;
+}
+header.sticky {
+  background: #fff;
+  padding: 20px 10px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+header .logo {
+  color: white;
+  font-size: 24px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+header.sticky .logo {
+  color: #111;
+}
+header ul {
+  position: relative;
+  display: flex;
+}
+header ul li {
+  position: relative;
+  list-style: none;
+}
+header ul li a {
+  position: relative;
+  display: inline-block;
+  margin: 0 15px;
+  color: white;
+  text-decoration: none;
+}
+header.sticky ul li a {
+  color: #111;
+}
+
+/* About-section */
+
+.heading {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #111;
+}
+.heading h2 {
+  font-weight: 600;
+  font-size: 40px;
+  font-family: monospace;
+}
+.content {
+  display: flex;
+  justify-content: space-between;
+}
+.content-box {
+  padding-right: 30px;
+}
+.content-box h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.w50 {
+  min-width: 50%;
+}
+.image {
+  padding-top: 25px;
+  padding-left: 75px;
+  width: 70%;
+}
+
+/* Skills-section */
+
+.skills {
+  background: #111;
+}
+.heading-white {
+  color: #fff;
+  text-align: center;
+}
+.heading-white h2 {
+  font-weight: 600;
+  font-size: 40px;
+  font-family: monospace;
+}
+.skills .content-skills {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.skills .content-skills .skill-box {
+  padding: 40px 20px;
+  background: #222;
+  color: #fff;
+  max-width: 340px;
+  margin: 20px;
+  text-align: center;
+  transition: 0.5s;
+}
+.skills .content-skills .skill-box:hover {
+  background: rgba(242, 241, 245, 0.4);
+}
+.skills .content-skills .skill-box img {
+  filter: invert(1);
+}
+.design {
+  width: 50%;
+}
+.development {
+  width: 66%;
+}
+.graphic {
+  width: 55%;
+}
+.writing {
+  width: 80%;
+}
+.skills .content-skills .skill-box h2 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/* Project-section */
+
+.project .content-project {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.project .content-project .project-box {
+  padding: 40px 20px;
+  background: #222;
+  color: #fff;
+  max-width: 200px;
+  margin: 20px;
+  text-align: center;
+  transition: 0.5s;
+}
+.project .content-project .project-box:hover {
+  background: rgba(43, 43, 46, 0.4);
+}
+.dice {
+  width: 100%;
+}
+.simon {
+  width: 100%;
+}
+.paw {
+  width: 100%;
+}
+.drums {
+  width: 90%;
+}
+.project .content-project .project-box h2 {
+  font-size: 20px;
+  font-weight: 600;
+}
+.works {
+  text-align: center;
+}
+
+/* Contact-section */
+
+.contact {
+  background: #111;
+}
+.form-box {
+  min-height: 60%;
+}
+.form-box form {
+  display: flex;
+  flex-direction: column;
+}
+.content-contact {
+  display: flex;
+}
+.form-box form h3,
+.contact-info h3 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.form-box form input,
+.form-box form textarea {
+  margin-bottom: 20px;
+  padding: 15px;
+  font-size: 16px;
+  background: transparent;
+  border: none;
+  outline: none;
+  background: #222;
+  color: #fff;
+  resize: none;
+  width: 330%;
+}
+.form-box form textarea {
+  min-height: 200px;
+  width: 330%;
+}
+.form-box form input::placeholder,
+.form-box form textarea::placeholder {
+  color: #999;
+}
+.form-box form input[type="submit"] {
+  max-width: 100px;
+  background: #2196f3;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.contact-info {
+  min-width: 40%;
+}
+.contact-info-box {
+  position: relative;
+}
+.contact-info-box .box {
+  position: relative;
+  padding: 20px 0;
+  display: flex;
+}
+.contact-info-box .box .icon {
+  min-width: 40px;
+  padding-top: 40px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  font-size: 24px;
+}
+.contact-info-box .box .text {
+  display: flex;
+  margin-left: 20px;
+  font-size: 16px;
+  color: #fff;
+  flex-direction: column;
+  font-weight: 300;
+}
+.contact-info-box .box .text h3 {
+  font-weight: 500;
+  color: #2196f3;
+  margin-bottom: 0;
+}
+
+/* Footer-section */
+
+.footer {
+  background: #000;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+.media {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+}
+.social-icon {
+  position: relative;
+  list-style: none;
+}
+.handle {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(223, 217, 217);
+  margin: 0 10px;
+  text-decoration: none;
+  font-size: 30px;
+  border-radius: 50%;
+  color: #332f2f;
+  box-shadow: inset -1px -1px 2px rgba(0, 0, 0, 0.2),
+    2px 2px 5px rgba(0, 0, 0, 0.2);
+  transition: 0.5s;
+}
+.handle:hover {
+  color: #999;
+  transform: translateY(-15px);
+  box-shadow: inset -1px -1px 2px rgba(0, 0, 0, 0.2),
+    24px 24px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* ResponsiveNess */
+
+@media (max-width: 991px) {
+  header,
+  header.sticky {
+    padding: 20px 50px;
+    z-index: 1000;
+  }
+  .menu {
+    position: fixed;
+    top: 75px;
+    left: -115%;
+    display: block;
+    padding: 100px 50px;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    background: #fff;
+    transition: 0.5s;
+    z-index: 999;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+  }
+  .menu.active {
+    left: 0;
+  }
+
+  header ul li a {
+    color: #111;
+    font-size: 24px;
+    margin: 10px;
+  }
+  .toggle {
+    width: 40px;
+    height: 40px;
+    background: url(https://us.123rf.com/450wm/lililia/lililia1711/lililia171100498/90663989-vector-flat-icon-of-the-menu-on-black-background-.jpg?ver=6);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 70px;
+    padding-left: 200px;
+    cursor: pointer;
+  }
+  .toggle.active {
+    background: url(https://clipartart.com/images/transparent-x-files-clipart-1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    cursor: pointer;
+  }
+  header.sticky .toggle {
+    filter: invert(1);
+  }
+  section {
+    padding: 50px 50px;
+  }
+  .home {
+    padding: 50px 50px 50px;
+  }
+  .home h2 {
+    font-size: 1.8em;
+  }
+  .home h3 {
+    font-size: 1em;
+  }
+  .btn {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+  .heading h2 {
+    font-size: 36px;
+  }
+  .content-box h3 {
+    font-size: 25px;
+  }
+  .content {
+    flex-direction: column;
+  }
+  .w50 {
+    margin-bottom: 10px;
+  }
+  .image {
+    width: 70%;
+  }
+  .skills .content-skills .skill-box {
+    margin: 10px;
+  }
+  .project .content-project .project-box {
+    width: 100%;
+    padding: 10px;
+  }
+  .project-box {
+    display: block;
+  }
+  .contact-info {
+    min-width: 40%;
+    margin: 20px 0;
+  }
+  .content-contact {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 600px) {
+  header,
+  header.sticky {
+    padding: 20px 20px;
+  }
+  .home {
+    padding: 100px 20px 100px;
+  }
+  .menu.active {
+    left: -40%;
+  }
+  .toggle {
+    width: 40px;
+    height: 40px;
+    background: url(https://us.123rf.com/450wm/lililia/lililia1711/lililia171100498/90663989-vector-flat-icon-of-the-menu-on-black-background-.jpg?ver=6);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: 70px;
+    padding-left: 75%;
+    cursor: pointer;
+  }
+  .toggle.active {
+    background: url(https://clipartart.com/images/transparent-x-files-clipart-1.jpg);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    cursor: pointer;
+  }
+  section {
+    padding: 50px 20px;
+  }
+  .image {
+    padding-left: 50px;
+  }
+}
