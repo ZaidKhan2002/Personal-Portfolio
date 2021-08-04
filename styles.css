@@ -14,7 +14,7 @@ section {
 .home {
   position: relative;
   min-height: 100vh;
-  background: url(images/Website-Design-Background);
+  background-img: images/Website-Design-Background;
   background-size: cover;
   background-position: right;
   display: flex;
